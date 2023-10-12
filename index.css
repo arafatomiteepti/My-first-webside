@@ -1,0 +1,60 @@
+.special-effect:hover{
+    color:indianred;
+    font-size: 60px;
+    background-color: lawngreen;
+}
+input:focus{
+    font-weight: 700;
+    font-size:20px ;
+    color: black;
+}
+
+li:last-child{
+    background-color:blue ;
+}
+li:nth-child(2n+1){
+    background-color: rgb(33, 238, 6);
+
+
+}
+.vist:visited:visited{
+    color:green;
+}
+.esudu-element::before{
+   content: "hello "; 
+   color: burlywood;
+   font-size: 12px;
+   background-color:cornflowerblue ;
+}
+.esudu-element::after{
+    content: Bye;
+    color: green;
+}
+
+body {
+    counter-reset: section;      /* Set a counter named 'section', and its initial value is 0. */
+  }
+  
+  .counter-esudu-element::before {
+    counter-increment: section;         /* Increment the value of section counter by 1 */
+    content: "Crush " counter(section) ": ";        /* Display the word 'Section ', the value of
+                                                  section counter, and a colon before the content
+                                                  of each h3 */
+  }
+.container{
+    background-color: lightskyblue;
+}
+div{
+    height: 100px;
+width: 100px;
+}
+#first{
+background-color: forestgreen;
+}
+#second{
+background-color:hotpink ;
+position: relative;
+}
+#third{
+background-color: greenyellow ;
+}
